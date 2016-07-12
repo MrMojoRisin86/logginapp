@@ -24,7 +24,12 @@ import com.vaadin.ui.VerticalLayout;
 @Widgetset("com.osd.vaadin.loginapp.MyAppWidgetset")
 public class MyUI extends UI {
 
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7620379994625455092L;
+
+	@Override
     protected void init(VaadinRequest vaadinRequest) {
     	
         final VerticalLayout layout = new VerticalLayout();
@@ -43,6 +48,7 @@ public class MyUI extends UI {
         layout.addComponents(username,pwd, button);
         layout.setMargin(true);
         layout.setSpacing(true);
+        
         
         setContent(layout);
     }
